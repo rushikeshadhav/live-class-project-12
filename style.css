@@ -11,6 +11,7 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     /* box-sizing: border-box; */
+    outline: 2px solid limegreen ;
 }
 
 .container {
@@ -152,7 +153,7 @@
 }
 
 .home-img {
-    height: 500px;
+    /* height: 500px; */
     width: 450px;
 }
 
@@ -162,7 +163,7 @@
 }
 
 .second-content {
-    width: 450px;
+    /* width: 450px; */
     height: 450px;
 }
 
@@ -220,7 +221,7 @@
 .test {
     background: orange;
     height: 450px;
-    width: 1000px;
+    /* width: 1000px; */
     margin-top: 40px;
     background: url("./images/pexels-fauxels-3184325.jpg");
     margin: 0 auto;
@@ -231,7 +232,8 @@
 
 .img-container {
     height: 450px;
-    width: 450px;
+    /* width: 450px; */
+    width: 100%;
     background: orange;
     background: url("./images/pexels-fauxels-3184405.jpg");
     background-size: cover;
@@ -241,7 +243,8 @@
 
 .img-container2 {
     height: 450px;
-    width: 450px;
+    /* width: 450px; */
+    width: 100%;
     background: orange;
     background: url("./images/pexels-fauxels-3184603.jpg");
     background-size: cover;
@@ -251,7 +254,8 @@
 
 .img-container3 {
     height: 450px;
-    width: 450px;
+    /* width: 450px; */
+    width: 100%;
     background: orange;
     background: url("./images/pexels-linkedin-sales-navigator-2182969.jpg");
     background-size: cover;
@@ -321,4 +325,72 @@ footer ul {
 footer ul li {
     margin: 20px 0;
     font-size: 15px;
+}
+
+@media (max-width: 360px){
+    .container {
+        flex-direction: column;
+    }
+    .height-1000vh {
+        height: 217vh;
+    }
+
+    .right-content {
+        width: 100% !important;
+    }
+    .connect-heading {
+        width: 100%;
+    }
+
+    .care-heading {
+        width: 100%;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    }
+    .width-half {
+        width: 100%;
+    }
+
+    .footer-bottom:last-child{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    nav .list {
+        display: none;
+    }
+
+    .container {
+        padding-top: 100px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .right-content {
+        width: 50%;
+    }
+
+    .connect-items {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .main-desc {
+        width: 100%;
+    }
+
+    .home-img {
+        width: 330px;
+    }
+
+    .main-heading{
+        font-size: 25px;
+    }
+
+    .download-email {
+        margin-top: 50px;
+    }
 }
